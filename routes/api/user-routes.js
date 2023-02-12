@@ -6,13 +6,15 @@ const {
     createUser,
     updateUser, 
     deleteUser,
+    addFriend,
+    deleteFriend,
 } = required("../../controllers/user-controller");
 
 router.route("/").get(getAllUsers).post(createUser);
 
 router.route('/:id').get(getSingleUser).put(updateUser).delete(deleteUser);
 
-router.route("/:userId/friends/:friendId").post(updateUser).delete(deleteFriend);
+router.route("/:userId/friends/:friendId").put(addFriend).delete(deleteFriend);
 
 
-module.export = router
+module.export = router;
