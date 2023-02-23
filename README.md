@@ -18,8 +18,7 @@
 1. Hit the "Code" button within this GitHub repo to copy link
 2. Within Bash, clone the repo using the copied link
 3. Within the terminal, use the command "npm i" to install the necessary packages
-4. Within the terminal, use the command "npm run seed"
-5. Within the terminal, use the command "npm start". This should get the API server running on local port.
+4. Within the terminal, use the command "npm start". This should get the API server running on local port.
 
 ## Usage
 Once the API server is running, open Insomnia. Paste the local host URL in the text input field. Utilize the API as needed for the POST, PUT, & DELETE routes for users, thoughts, or the POST & DELETE routes for a user’s friend list.
@@ -28,7 +27,7 @@ Once the API server is running, open Insomnia. Paste the local host URL in the t
 
 - [Social Network API Repo](https://github.com/lisaericksoncoding/Social_Network_API "Social Network API Repo")
 
-- [Demo Video](https://drive.google.com/file/d/1cY9CsJL4aJPlEkgpT8-kLsR5W0S6yhW3/view?usp=sharing "Demo Video")
+- [Demo Video](https://drive.google.com/file/d/1QBro9RUAVfUR0DD4F8m0dy693DJrEFho/view?usp=sharing "Demo Video")
 
 ## Built With
 - Visual Studio Code

@@ -1,16 +1,25 @@
 const { User, Thought } = require('../models');
 
 const userController = {
-    async getAllUsers() {
+    async getAllUsers(req, res) {
         try {
+            console.log("getAllUsers");
             const users = await User.find({}).select('-_v').populate('thoughts').populate('friends');
-            res.status(200).json(users);
+            // User.find({})
+            // .select('-_v')
+            // .populate('thoughts')
+            // .populate('friends')
+            // .then(users => {
+                console.log(users)
+                res.status(200).json(users);
+            // })
+
         } catch (err) {
             res.status(500).json(err)
         }
 
     },
-    async getSingleUser() {
+    async getSingleUser(req, res) {
         try {
             const users = await User.findOne({_id: req.params.id}).select('-_v').populate('thoughts').populate('friends');
             if(!user) {
@@ -96,4 +105,4 @@ const userController = {
 
     },
 }
-module.export = userController;
+module.exports = userController;
